@@ -14,12 +14,12 @@ package_name =
 package package_name
 
 template '/var/www/html/index.html' do
-   source 'index.html.erb'
-   mode '0644'
-   owner 'web_admin'
-   group 'web_admin'
+  source 'index.html.erb'
+  mode '0644'
+  owner 'web_admin'
+  group 'web_admin'
 end
 
-service package_name do
-   action [:enable, :start]
+service service_name do
+  action [:enable, :start]
 end
